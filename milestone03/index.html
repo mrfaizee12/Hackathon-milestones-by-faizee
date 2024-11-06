@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="title">Dynamic Resume Builder by Faizan Anjum</h2>
+        <form id="resumeForm">
+            <!-- Personal Information -->
+            <div class="form-section">
+                <h3>Personal Information</h3>
+                <label>Name: <input type="text" id="name" required></label><br>
+                <label>Email: <input type="email" id="email" required></label><br>
+                <label>Phone: <input type="text" id="phone" required></label><br>
+                <label>Date of Birth: <input type="date" id="dob"></label><br>
+                <label>Address: <input type="text" id="address" placeholder="Your address"></label><br>
+                <label>Choose Profile Picture: <input type="file" id="profilePicture" accept="image/*"></label><br>
+            </div>
+
+            <!-- Education -->
+            <div class="form-section">
+                <h3>Education</h3>
+                <label>School (Matric): <input type="text" id="school" placeholder="School name"></label><br>
+                <label>Year: <input type="text" id="schoolYear"></label><br>
+                <label>College (Intermediate): <input type="text" id="college" placeholder="College name"></label><br>
+                <label>Year: <input type="text" id="collegeYear"></label><br>
+                <label>University (Graduation): <input type="text" id="university" placeholder="University name"></label><br>
+                <label>Year: <input type="text" id="universityYear"></label><br>
+            </div>
+
+            <!-- Languages -->
+            <div class="form-section">
+                <h3>Languages</h3>
+                <label>Languages Known: <input type="text" id="languages" placeholder="Comma-separated"></label><br>
+            </div>
+
+            <!-- Skills -->
+            <div class="form-section">
+                <h3>Skills</h3>
+                <label>Skills: <input type="text" id="skills" placeholder="Comma-separated"></label><br>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="form-section">
+                <h3>Work Experience</h3>
+                <label>Experience: <textarea id="experience" placeholder="Describe your work experience here"></textarea></label><br>
+            </div>
+
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+    </div>
+
+    <div class="resume-display">
+        <h2>Generated Resume</h2>
+        <div id="resumeOutput">
+            <!-- Dynamic resume content will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
