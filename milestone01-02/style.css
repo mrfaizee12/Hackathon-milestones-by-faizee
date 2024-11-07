@@ -103,6 +103,13 @@ button:hover {
     button {
         font-size: 16px;
     }
+
+    /* Additional adjustments for smaller spacing */
+    .left-section p {
+        padding: 5px; /* Reduce padding */
+        margin: 0; /* Remove margins */
+        line-height: 1.2; /* Adjust line height */
+    }
 }
 
 @media (max-width: 480px) {
@@ -130,5 +137,13 @@ button:hover {
 
     button {
         font-size: 14px;
+    }
+
+    /* Additional adjustments for smaller screens */
+    .left-section p {
+        font-size: 14px; /* Adjust font size */
+        padding: 5px; /* Adjust padding */
+        margin: 0; /* Remove margins */
+        line-height: 1.2; /* Adjust line height */
     }
 }
